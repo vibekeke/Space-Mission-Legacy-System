@@ -43,7 +43,7 @@ public class TestSpaceMission {
         assertEquals(expectedOutput, actualOutput);
     }
 
-        @Test
+    @Test
     public void testRunMission_telemetryReadingTypePressure_hasCorrectStringOutput () {
         //ARRANGE
         Writer writer = new MockWriter();
