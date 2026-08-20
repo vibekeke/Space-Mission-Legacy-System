@@ -21,6 +21,8 @@ public class SpaceMission {
                     fw.write("Temperature: " + r.value + " C at " + r.timestamp + "\n");
                 } else if ("PRESSURE".equals(r.type)) {
                     fw.write("Pressure: " + r.value + " kPa at " + r.timestamp + "\n");
+                } else if ("OXYGEN".equals(r.type)) {
+                    fw.write("Oxygen: " + r.value + " % at " + r.timestamp + "\n");
                 } else {
                     fw.write("Unknown reading " + r.type + "\n");
                 }
