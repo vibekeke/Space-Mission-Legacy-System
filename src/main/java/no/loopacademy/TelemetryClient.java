@@ -2,7 +2,7 @@ package no.loopacademy;
 
 import java.util.Random;
 
-public class TelemetryClient {
+public class TelemetryClient implements TelemetryReader {
     public TelemetryClient() {
         connect(Config.telemetryEndpoint);
     }

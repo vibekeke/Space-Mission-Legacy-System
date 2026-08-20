@@ -1,6 +1,6 @@
 package no.loopacademy;
 
-public class MockTelemetryClient extends TelemetryClient {
+public class MockTelemetryClient implements TelemetryReader {
     TelemetryReading reading;
 
     public MockTelemetryClient(TelemetryReading reading) {

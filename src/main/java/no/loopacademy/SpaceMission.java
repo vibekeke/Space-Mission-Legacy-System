@@ -6,7 +6,7 @@ import java.io.Writer;
 import java.time.LocalDateTime;
 
 public class SpaceMission {
-    private TelemetryClient client;
+    private TelemetryReader client;
 
     public SpaceMission() {
         this.client = createTelemetryClient();
@@ -38,7 +38,7 @@ public class SpaceMission {
         return new FileWriter(Config.logFile, true);
     }
 
-    protected TelemetryClient createTelemetryClient() {
+    protected TelemetryReader createTelemetryClient() {
         return new TelemetryClient();
     }
 

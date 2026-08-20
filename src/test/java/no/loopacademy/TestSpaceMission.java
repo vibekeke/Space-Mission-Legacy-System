@@ -15,7 +15,7 @@ public class TestSpaceMission {
         TelemetryReading reading = MockTelemetryReading.Builder()
                                         .withType("TEMP")
                                         .build();
-        TelemetryClient client = new MockTelemetryClient(reading);
+        TelemetryReader client = new MockTelemetryClient(reading);
 
         SpaceMission mission = new SpaceMission() {
             @Override
@@ -24,7 +24,7 @@ public class TestSpaceMission {
             }
 
             @Override
-            protected TelemetryClient createTelemetryClient() {
+            protected TelemetryReader createTelemetryClient() {
                 return client;
             }
 
@@ -50,7 +50,7 @@ public class TestSpaceMission {
         TelemetryReading reading = MockTelemetryReading.Builder()
                                         .withType("PRESSURE")
                                         .build();
-        TelemetryClient client = new MockTelemetryClient(reading);
+        TelemetryReader client = new MockTelemetryClient(reading);
 
         SpaceMission mission = new SpaceMission() {
             @Override
@@ -59,7 +59,7 @@ public class TestSpaceMission {
             }
 
             @Override
-            protected TelemetryClient createTelemetryClient() {
+            protected TelemetryReader createTelemetryClient() {
                 return client;
             }
 
@@ -85,7 +85,7 @@ public class TestSpaceMission {
         TelemetryReading reading = MockTelemetryReading.Builder()
                                         .withType("OXYGEN")
                                         .build();
-        TelemetryClient client = new MockTelemetryClient(reading);
+        TelemetryReader client = new MockTelemetryClient(reading);
 
         SpaceMission mission = new SpaceMission() {
             @Override
@@ -94,7 +94,7 @@ public class TestSpaceMission {
             }
 
             @Override
-            protected TelemetryClient createTelemetryClient() {
+            protected TelemetryReader createTelemetryClient() {
                 return client;
             }
 
