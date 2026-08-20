@@ -10,7 +10,7 @@ public class MockTelemetryReading {
         reading.timestamp = System.currentTimeMillis();
     }
 
-    public static MockTelemetryReading Builder() {
+    public static MockTelemetryReading builder() {
         return new MockTelemetryReading();
     }
 

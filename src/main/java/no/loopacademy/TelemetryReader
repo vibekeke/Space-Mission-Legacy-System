@@ -1,0 +1,5 @@
+package no.loopacademy;
+
+public interface TelemetryReader {
+    public TelemetryReading read();
+}
