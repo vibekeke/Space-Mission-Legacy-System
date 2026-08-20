@@ -27,6 +27,9 @@ public class TestSpaceMission {
             protected TelemetryClient createTelemetryClient() {
                 return client;
             }
+
+            @Override
+            protected void pause(long millis) { }; 
         };
 
         String expectedLine = "Temperature: " + reading.value + " C at " + reading.timestamp + "\n";
@@ -59,6 +62,9 @@ public class TestSpaceMission {
             protected TelemetryClient createTelemetryClient() {
                 return client;
             }
+
+            @Override
+            protected void pause(long millis) { }; 
         };
 
         String expectedLine = "Pressure: " + reading.value + " kPa at " + reading.timestamp + "\n";
@@ -91,6 +97,9 @@ public class TestSpaceMission {
             protected TelemetryClient createTelemetryClient() {
                 return client;
             }
+
+            @Override
+            protected void pause(long millis) { }; 
         };
 
         String expectedLine = "Oxygen: " + reading.value + " % at " + reading.timestamp + "\n";

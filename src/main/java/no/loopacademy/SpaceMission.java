@@ -27,7 +27,7 @@ public class SpaceMission {
                     fw.write("Unknown reading " + r.type + "\n");
                 }
 
-                Thread.sleep(1000);
+                pause(1000);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -40,6 +40,10 @@ public class SpaceMission {
 
     protected TelemetryClient createTelemetryClient() {
         return new TelemetryClient();
+    }
+
+    protected void pause(long millis) throws InterruptedException {
+        Thread.sleep(millis);
     }
 
     public void emergencyLog(String message) {
