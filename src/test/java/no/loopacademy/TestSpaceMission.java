@@ -12,7 +12,7 @@ public class TestSpaceMission {
     public void testRunMission_telemetryReadingTypeTemp_hasCorrectStringOutput () {
         //ARRANGE
         Writer writer = new MockWriter();
-        TelemetryReading reading = MockTelemetryReading.Builder()
+        TelemetryReading reading = MockTelemetryReading.builder()
                                         .withType("TEMP")
                                         .build();
         TelemetryReader client = new MockTelemetryClient(reading);
@@ -47,7 +47,7 @@ public class TestSpaceMission {
     public void testRunMission_telemetryReadingTypePressure_hasCorrectStringOutput () {
         //ARRANGE
         Writer writer = new MockWriter();
-        TelemetryReading reading = MockTelemetryReading.Builder()
+        TelemetryReading reading = MockTelemetryReading.builder()
                                         .withType("PRESSURE")
                                         .build();
         TelemetryReader client = new MockTelemetryClient(reading);
@@ -82,7 +82,7 @@ public class TestSpaceMission {
     public void testRunMission_telemetryReadingTypeOxygen_hasCorrectStringOutput () {
         //ARRANGE
         Writer writer = new MockWriter();
-        TelemetryReading reading = MockTelemetryReading.Builder()
+        TelemetryReading reading = MockTelemetryReading.builder()
                                         .withType("OXYGEN")
                                         .build();
         TelemetryReader client = new MockTelemetryClient(reading);
